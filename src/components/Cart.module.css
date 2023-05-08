@@ -1,0 +1,26 @@
+
+.total-amount-container {
+    display: flex;
+    align-items: center;
+    font-size: medium;
+}
+.total-amount {
+    font-weight: bold;
+    align-items: center;
+    color:hsl(35, 100%, 35%);
+    width:5rem;
+}
+
+.btn-complete {
+    padding: 5px 20px;
+    background-color: hsl(25, 100%, 50%);
+    border-radius: 5px;
+    width:5rem
+}
+
+.amount-display {
+    display: flex;
+    justify-content: space-between;
+    width: 12rem;
+    align-items: center;
+}

@@ -1,0 +1,17 @@
+.grocery-list-container {
+    display:grid;
+    grid-template-columns:1fr 1fr 1fr;
+    gap: 1rem;
+}
+
+@media only screen and (max-width: 1200px){
+    .grocery-list-container {
+        grid-template-columns:1fr 1fr;
+    }
+}
+
+@media only screen and (max-width: 900px){
+    .grocery-list-container {
+        grid-template-columns:1fr;
+    }
+}

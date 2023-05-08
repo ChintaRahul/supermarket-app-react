@@ -1,0 +1,37 @@
+.cart-item {
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.container {
+    display: flex;
+    width: 15rem;
+    justify-content: space-between;
+    margin:auto 2rem;
+    align-items: center;
+}
+
+.cart-img {
+    width:5rem;
+    height:5rem;
+}
+
+.item-price {
+    font-weight: bold;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color:hsl(35, 100%, 35%);
+    width:5rem;
+}
+
+.item-price s {
+    opacity: 0.5;
+    font-size: smaller;
+}
+
+.quanity-display {
+    font-size: small;
+}

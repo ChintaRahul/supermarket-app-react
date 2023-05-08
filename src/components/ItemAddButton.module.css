@@ -1,0 +1,22 @@
+
+.btn-add {
+    padding: 5px 20px;
+    background-color: hsl(25, 100%, 50%);
+}
+
+.btn-add:hover, .span-counter-btn:hover {
+    background-color: hsl(25, 100%, 35%);
+    border-radius: 5px;
+}
+
+.btn-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: hsl(25, 100%, 50%);
+}
+
+.span-counter-btn {
+    cursor: pointer;
+    padding: 5px 10px;
+}

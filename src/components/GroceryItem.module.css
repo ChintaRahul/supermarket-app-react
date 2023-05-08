@@ -1,0 +1,41 @@
+.container{
+    width: 15rem;
+    margin: 0.5rem auto;
+    background-color: white;
+    padding: 1rem;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+    border: 1px solid hsla(0, 0, 0, 0.1)
+}
+
+.img-container {
+    text-align: center;
+    margin:0.5rem auto;
+}
+
+.item-img {
+    width: 10rem;
+    height:10rem;
+    text-align: center;
+}
+
+.item-quantity, .item-discount, .item-price s {
+    opacity: 0.5;
+    margin:0.5rem auto;
+    font-size: smaller;
+}
+
+.item-price {
+    font-weight: bold;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color:hsl(35, 100%, 35%);
+    margin:0.5rem auto;
+}
+
+.item-discount-span {
+    display: flex;
+    justify-content: space-between;
+    width:3.5rem;
+}

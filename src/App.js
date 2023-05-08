@@ -1,23 +1,28 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import { useDispatch, useSelector } from "react-redux";
+import GroceryList from "./components/GroceryList";
+import HomeCart from "./components/HomeCart";
+import { useEffect } from "react";
+import { fetchCartData } from "./store/Cart-Actions";
+import Cart from "./components/Cart";
 
 function App() {
+  const showCart = useSelector((state) => state.cart.showCart);
+
+  const dispatch = useDispatch();
+  useEffect(() => {
+    dispatch(fetchCartData());
+  }, [dispatch]);
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+        <div className="title-container">
+          <h1>ShopMarket App</h1>
+          <HomeCart />
+        </div>
+        <div>
+          {showCart && <Cart />}
+          <GroceryList />
+        </div>
     </div>
   );
 }

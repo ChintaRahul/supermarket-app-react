@@ -1,0 +1,35 @@
+
+.cart-main-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width:15rem;
+}
+
+.cart-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.btn-cart {
+    width:auto;
+    padding:0.5rem 1rem;
+    background-color: hsl(130, 50%, 50%);
+}
+
+.btn-cart:hover {
+    background-color: hsl(130, 50%, 40%);
+}
+
+.cart-quantity{
+    opacity: 0.5;
+    margin:0.5rem auto;
+    font-size: smaller;
+    margin:0.25rem 0;
+}
+
+.cart-amount {
+    font-weight: bold;
+    color:hsl(35, 100%, 35%);
+}
